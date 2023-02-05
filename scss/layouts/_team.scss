@@ -3,15 +3,16 @@
 .team{
   background-image: url("../../assets/images/bg-curve-mobile.svg");
   background-position: top center;
-  background-size: cover;
+  background-size: 550% 100%;
   background-repeat: no-repeat;
   padding: 2rem 1rem;
   font-size: 0.925rem;
   
   @include mq(medium){
     background-image: url("../../assets/images/bg-curve-desktop.svg");
+    background-size: 300% 100%;
     @include grid();
-    padding: 3rem 5rem;
+    padding: 5.5rem;
   }
     
   &__img{
