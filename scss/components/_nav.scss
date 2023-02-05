@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+.navbar{
+    @include flex(space-between, center, row);
+    font-family: $font-family2;
+    font-size: 0.75rem;
+    color: $very-dark-blue;
+    padding: 2rem 1.5rem;
+
+    @include mq(medium){
+        font-size: $font-size;
+        padding: 3.5rem 3rem 3.5rem 5.5rem;
+
+
+    }
+
+    &__brand{
+        max-width: 30%;
+    }
+
+    
+    &__list{
+        @include flex(null , null, row);
+    }
+    
+    &__item{
+        padding-inline: 0.5rem;
+
+        @include mq(medium){
+            padding-inline: 2rem;
+        }
+    }
+}

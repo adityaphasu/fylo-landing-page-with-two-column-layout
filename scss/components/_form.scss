@@ -1,0 +1,58 @@
+@use "../abstracts" as *;
+
+.form{
+    padding: 2rem;
+
+    @include mq(medium){
+        padding: 0;
+        
+    }
+
+    &--small{
+      @include mq(medium){
+        @include flex(null, null, null);
+        gap: 1rem;
+      }     
+    }
+
+    * {
+        width: 100%;
+        margin-block: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        font-family: $font-family2;
+    }
+
+    &__input{
+        border: 1px solid $very-dark-blue;
+
+        &::placeholder{
+            font-size: small;
+            color: $light-gray;
+        }
+
+    }
+
+    &__btn{
+        border: none;
+        background-color: $bright-blue;
+        color: $light-grayish-blue;
+        font-weight: $fw--700;
+        @include transition-ease(opacity);
+
+        &:hover{
+            opacity: 0.5;
+        }
+        
+
+        @include mq(medium){
+            width: 25rem;
+            margin-right: 2.5rem;
+
+            &--small{
+              width: 15rem;
+            }
+            
+        }
+    } 
+}

@@ -1,0 +1,81 @@
+@use "../abstracts" as *;
+
+
+.footer{
+    background-color: $very-dark-blue;
+    color: $light-grayish-blue;
+    text-align: left;
+    padding: 3rem 0; 
+    
+
+    @include mq(medium){
+        padding: 3rem;
+        @include grid();
+        grid-template-columns: repeat(3, 1fr);
+        align-items: baseline;
+        justify-items: start;
+        
+      &__navbar{
+        @include flex(null, null, row);
+        gap: 4rem;
+      }
+    }
+
+    &__logo{
+        filter: brightness(0) invert(100%);
+        padding-block: 2rem;
+        
+    }
+   
+    &__contact{
+        padding: 2rem;
+
+       &-icon{
+        display: inline-block;
+        padding-inline: 0.5rem;
+       }
+
+       &-info{
+        padding-block: 0.5rem;
+       }
+    }
+
+    &__list{
+        padding: 1.5rem;
+
+        @include mq(medium){
+            padding: 0 1.5rem;
+        }
+       
+        li{
+            padding-block: 0.5rem;
+        }
+    }
+    
+
+    &__social{
+        text-align: center;
+
+        @include mq(medium){
+            justify-self: flex-start;
+        }
+        
+        &-icon{
+           border: 1.5px solid $white;
+           border-radius: 50%;
+           margin: 0.625rem;
+           padding: 0.3rem 0.5rem;
+           @include transition-ease(all);
+
+           &:hover{
+            color: $bright-blue;
+            border-color: $bright-blue;
+           }
+        }
+
+        &-icon:nth-child(1){
+          padding: 0.3rem 0.7rem;
+        }
+    }
+
+}

@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+.features{
+    color: $very-dark-blue;
+    padding: 3rem 1.6rem;
+    
+    @include mq(medium){
+        @include grid();
+        padding: 7rem 3.5rem;
+    }
+
+
+    &__content{
+        @include mq(medium){
+            grid-row: 1 / 1;
+            padding-inline: 2rem;
+        }
+    }
+
+    &__heading{
+        padding-block: 1.5rem;
+
+        @include mq(medium){
+            font-size: 2.4rem;
+        }
+    }
+
+    &__text{
+        @include mq(medium){
+          font-weight: $fw--700;
+        }
+    }
+
+    
+
+    
+}

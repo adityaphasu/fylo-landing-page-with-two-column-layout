@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+body{
+    font-family: $font-family1;
+    font-size: $font-size;
+    text-align: center;
+
+    @include mq(medium){
+        text-align: left;
+    }
+}
+
+h1,
+h2,
+h3{
+    font-family: $font-family2;
+    font-weight: $fw--700;
+    color: $very-dark-blue;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    @include transition-ease(color);
+  
+    &:hover{
+        color: $desaturated-blue;
+    }    
+}
+
+li{
+    list-style: none;
+}

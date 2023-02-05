@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+.sign-in{
+    background-color: $desaturated-blue;
+    color: $light-grayish-blue;
+    padding: 1rem 1.5rem;
+
+    @include mq(medium){
+        @include grid();
+        gap: 16rem;
+        padding: 3rem 5rem;
+    }
+
+    &__heading{
+        color: $light-grayish-blue;
+        padding-block: 1.8rem;
+
+        @include mq(medium){
+            font-size: 1.7rem;
+        }
+    }
+}
