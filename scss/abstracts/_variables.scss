@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 
 // COLORS
 
 $very-dark-blue: hsl(243, 87%, 12%);
 $desaturated-blue: hsl(238, 22%, 44%);
-$bright-blue: hsl(224, 93%, 58%);
+$bright-blue: hsl(225, 94%, 45%);
 $moderate-cyan: hsl(170, 45%, 43%);
-$light-grayish-blue: hsl(240, 75%, 98%);;
+$light-grayish-blue: hsl(240, 80%, 98%);
 $light-gray: hsl(0, 0%, 75%);
 $translucent-light-gray: hsla(0, 0%, 75%, 0.49);
 $white: hsl(0, 0%, 100%);
 
-
 // FONTS
 
-$font-family1:'Open Sans', sans-serif;
-$font-family2: 'Raleway', sans-serif;
-$fw--400:400;
+$font-family1: "Open Sans", sans-serif;
+$font-family2: "Raleway", sans-serif;
+$fw--400: 400;
 $fw--700: 700;
 $font-size: 1rem;
 
 // BREAKPOINTS
 
 $breakpoints: (
-    "medium": 49rem,
-    "large": 64rem,
-)
+  "medium": 49rem,
+  "large": 64rem,
+);
