@@ -93,18 +93,14 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: small;
   color: hsl(0deg, 0%, 75%);
 }
-.form__input:-ms-input-placeholder {
-  font-size: small;
-  color: hsl(0deg, 0%, 75%);
-}
 .form__input::placeholder {
   font-size: small;
   color: hsl(0deg, 0%, 75%);
 }
 .form__btn {
   border: none;
-  background-color: hsl(224deg, 93%, 58%);
-  color: hsl(240deg, 75%, 98%);
+  background-color: hsl(225deg, 94%, 45%);
+  color: hsl(240deg, 80%, 98%);
   font-weight: 700;
   transition: opacity 0.5s ease-in-out;
 }
@@ -188,7 +184,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .footer {
   background-color: hsl(243deg, 87%, 12%);
-  color: hsl(240deg, 75%, 98%);
+  color: hsl(240deg, 80%, 98%);
   text-align: left;
   padding: 3rem 0;
 }
@@ -249,8 +245,8 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s ease-in-out;
 }
 .footer__social-icon:hover {
-  color: hsl(224deg, 93%, 58%);
-  border-color: hsl(224deg, 93%, 58%);
+  color: hsl(225deg, 94%, 45%);
+  border-color: hsl(225deg, 94%, 45%);
 }
 .footer__social-icon:nth-child(1) {
   padding: 0.3rem 0.7rem;
@@ -258,7 +254,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .sign-in {
   background-color: hsl(238deg, 22%, 44%);
-  color: hsl(240deg, 75%, 98%);
+  color: hsl(240deg, 80%, 98%);
   padding: 1rem 1.5rem;
 }
 @media only screen and (min-width: 49rem) {
@@ -272,7 +268,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .sign-in__heading {
-  color: hsl(240deg, 75%, 98%);
+  color: hsl(240deg, 80%, 98%);
   padding-block: 1.8rem;
 }
 @media only screen and (min-width: 49rem) {
